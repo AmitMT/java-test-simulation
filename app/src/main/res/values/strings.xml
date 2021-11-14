@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WE LIVE IN A SIMULATION</string>
+    <string name="sunset">sunset</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="turn_dialog_text">Please give the phone to the second player</string>
+    <string name="ok">OK</string>
+    <string name="turn_image">turn image</string>
+    <string name="rounds_left">Rounds left</string>
+    <string name="_30">30</string>
+</resources>
