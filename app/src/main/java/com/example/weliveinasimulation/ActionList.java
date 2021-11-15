@@ -1,6 +1,7 @@
 package com.example.weliveinasimulation;
 
 import android.content.Context;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,9 +19,13 @@ public class ActionList extends LinearLayout {
     int selectedAction = -1;
 
     public ActionList(Context context) {
-        super(context);
-        new ActionList(context, MainActivity.Player.FISHERMAN);
+        this(context, MainActivity.Player.FISHERMAN);
     }
+
+    public ActionList(Context context, AttributeSet attributeSet) {
+        this(context, MainActivity.Player.FISHERMAN);
+    }
+
 
     public ActionList(Context context, MainActivity.Player player) {
         super(context);
@@ -44,4 +49,6 @@ public class ActionList extends LinearLayout {
         ));
         Log.e("hiiii", "hi");
     }
+
+
 }
