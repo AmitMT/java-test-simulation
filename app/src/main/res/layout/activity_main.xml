@@ -10,8 +10,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -43,6 +44,7 @@
             android:id="@+id/turn_image"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/circle"
             android:contentDescription="@string/turn_image"
             android:src="@drawable/fish" />
@@ -51,19 +53,31 @@
             android:id="@+id/sunset"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/circle"
             android:contentDescription="@string/sunset"
             android:src="@drawable/sunset" />
 
     </LinearLayout>
 
+    <com.example.weliveinasimulation.Board
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     <LinearLayout
         android:id="@+id/contain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

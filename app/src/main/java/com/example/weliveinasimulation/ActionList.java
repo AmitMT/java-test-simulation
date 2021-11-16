@@ -26,7 +26,6 @@ public class ActionList extends LinearLayout {
         this(context, MainActivity.Player.FISHERMAN);
     }
 
-
     public ActionList(Context context, MainActivity.Player player) {
         super(context);
 
